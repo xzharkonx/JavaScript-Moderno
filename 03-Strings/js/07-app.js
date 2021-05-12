@@ -1,9 +1,10 @@
 
-// 20. String Methods - Convertir a Mayúsculas o Minúsculas.
+// # 20. String Methods - Convertir a Mayúsculas o Minúsculas.
 
 const producto = 'Monitor 20 pulgadas';
 
-// toUpperCase (A Mayúscula) y toLowerCase (A Minúscula)
+// ## toUpperCase() y toLowerCase()
+// * toUpperCase (A Mayúscula) y toLowerCase (A Minúscula)
 
 console.log(producto.toUpperCase());
 console.log(producto.toLowerCase());
@@ -12,7 +13,19 @@ const email = "CORREO@CORREO.COM"
 console.log(email.toLowerCase());
 
 const precio = 300;
-// Los números se pintan de azul en la consola.
+const precio2 = "500";
+// * Los números se pintan de azul en la consola.
 console.log(precio);
-// Cambiamos de numero a String
+
+// ## Conversión de números a Strings y viceversa
+
+// * Cambiamos de numero a String
 console.log(precio.toString());
+// * Cambiamos de numero a String
+// ? Se utiliza el método parseInt y se le pasa un String que será
+// ? convertido a entero en base decimal, para ello se agrega otro
+// ? parametro con el valor de 10.
+console.log(parseInt(precio2, 10));
+
+// ! Podemos comprobar si la conversión es valida con isNaN()
+// ! Es decir, si hubo o no un error al convertir un String a un número
