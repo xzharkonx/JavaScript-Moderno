@@ -1,3 +1,6 @@
+
+// # 12. Todo lo que debes saber de las variables let
+
 // La única diferiencia entre var y let es lo que se le conoce como el scope
 // de las variables, esto se verá más adelante.
 

@@ -1,3 +1,5 @@
+
+// # 11. Todo lo que debes saber de las variables var
 // JavaScript es un lenguaje de tipo dinamico, no se especifíca el tipo de dato.
 // var es una sintaxis antigua.
 
@@ -31,7 +33,7 @@ var dias99; // Esto está correcto.
 // Si pueden iniciarse con un _
 var _01;
 
-// Estilos para iniciar variables con más de una palabra.
-var nombreProducto; // CamelCase (Por la mayúscula en la segunda letra). Está es la más usada.
-var nombre_producto_categoria_precio; // Snake/Serpiente o Underscott (por el guión bajo).
-var NombreProducto // PascalCase (Está se aplica más en las Clases).
+// ## Estilos para iniciar variables con más de una palabra.
+var nombreProducto; // ### CamelCase (Por la mayúscula en la segunda letra). Está es la más usada.
+var nombre_producto_categoria_precio; // ### Snake/Serpiente o Underscott (por el guión bajo).
+var NombreProducto // ### PascalCase (Está se aplica más en las Clases).
