@@ -1,5 +1,8 @@
+
+// * Sección 1: Introducción al Curso  JavaScript
+
 // alert('Hola Mundo');
-// Pregnta al usuario su nombre.
+// Pregunta al usuario su nombre.
 const nombre = prompt('¿Cuál es tu nombre?');
 
 // Toma el nombre y lo muestra en pantalla.
@@ -13,12 +16,13 @@ document.querySelector('.contenido').innerHTML = `${nombre} está aprendiendo Ja
 
 // Estos códigos funcionarán en la consola de las herramientas de desarrollador.
 
+console.clear(); // Limpiamos la consola.
 console.log([1,2,3,4]);
 console.table([1,2,3,4]);
+console.table([[1,2],[3,4],[5,6]]);
 
 console.error('Algo salió mal.');
 console.warn('Esto es una advertencia.');
-console.clear(); // Limpiamos la consola.
 
 // Comparando el tiempo de ejecución de algún código.
 
