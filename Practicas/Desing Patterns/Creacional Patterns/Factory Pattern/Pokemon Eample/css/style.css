@@ -1,0 +1,132 @@
+
+
+/* Variables */
+
+:root {
+    --color-1: rgb(158, 221, 255);
+    --color-2: rgb(255, 105, 35);
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    background: linear-gradient(to right, var(--color-2), var(--color-1));
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container header {
+    margin-top: 40px;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+}
+
+.container .row {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.container .row .subtitle {
+    color: var(--color-1);
+    margin-bottom: 20px;
+}
+
+.container .row .tipoFabricaLabel {
+    margin-top: 20px;
+}
+.container .row .tipoFabricaSelect {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+
+    border: 1px solid #454545;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    font-size: .8rem;
+    background-color: #000000;
+    color: #8C8C8C;
+}
+
+.container .row .createEnemyButton {
+    margin-top: 20px;
+    padding: 20px;
+    width: calc(50% - 5px);
+    
+    background: #fff;
+    color: var(--color-1);
+    font-size: 1.2rem;
+    
+    border: var(--color-1) solid 1px;
+    border-radius: 8px ;
+    -webkit-border-radius: 8px ;
+    -moz-border-radius: 8px ;
+    -ms-border-radius: 8px ;
+    -o-border-radius: 8px ;
+}
+.container .row .showEnemyButton {
+    margin-top: 20px;
+    padding: 20px;
+    width: calc(50% - 5px);
+    
+    background: #fff;
+    color: var(--color-2);
+    font-size: 1.2rem;
+    
+    border: var(--color-2) solid 1px;
+    border-radius: 8px ;
+    -webkit-border-radius: 8px ;
+    -moz-border-radius: 8px ;
+    -ms-border-radius: 8px ;
+    -o-border-radius: 8px ;
+}
+
+
+footer {
+    /* height: 200px; */
+    background-color: #000;
+}
+
+footer p {
+
+    /* margin-top: 20px; */
+    padding: 30px;
+
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+
+}

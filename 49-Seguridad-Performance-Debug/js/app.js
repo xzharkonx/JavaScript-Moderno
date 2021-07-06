@@ -36,15 +36,31 @@ function consultarCriptomonedas() {
 }
 // llena el select 
 function selectCriptomonedas(criptomonedas) {
+    
+    // # 313. performance.now() para conocer cuanto tarda en ejecutarse el código.
+    // ## Conocer el tiempo de ejecución.
+    const inicio = performance.now(); // Nos reportará el tiempo actual
 
-    criptomonedas.forEach( cripto => {
-        const { FullName, Name } = cripto.CoinInfo;
+    // criptomonedas.forEach( cripto => {
+    //     const { FullName, Name } = cripto.CoinInfo;
+    //     const option = document.createElement('option');
+    //     option.value = Name;
+    //     option.textContent = FullName;
+    //     // insertar el HTML
+    //     criptomonedasSelect.appendChild(option);
+    // });
+
+    for (let i = 0; i < criptomonedas.length; i++) {
+        const { FullName, Name } = criptomonedas[i].CoinInfo;
         const option = document.createElement('option');
         option.value = Name;
         option.textContent = FullName;
         // insertar el HTML
         criptomonedasSelect.appendChild(option);
-    });
+    }
+
+    const fin = performance.now();
+    console.log(fin - inicio);
 
 }
 
@@ -89,6 +105,10 @@ function mostrarAlerta(mensaje) {
 
 function consultarAPI() {
 
+    // # 313. performance.now() para conocer cuanto tarda en ejecutarse el código.
+    // ## Conocer el tiempo de ejecución.
+    const inicio = performance.now(); // Nos reportará el tiempo actual
+
     const { moneda, criptomoneda} = objBusqueda;
 
     const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsyms=${moneda}`;
@@ -101,6 +121,9 @@ function consultarAPI() {
             mostrarCotizacionHTML(cotizacion.DISPLAY[criptomoneda][moneda]);
         });
 
+    const fin = performance.now();
+    console.log('El tiempo de consulta fue de:', (fin - inicio));
+
 }
 
 function mostrarCotizacionHTML(cotizacion) {
@@ -110,7 +133,9 @@ function mostrarCotizacionHTML(cotizacion) {
     console.log(cotizacion);
     const  { PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, LASTUPDATE } = cotizacion;
 
-
+    // # 315. Como utilizar debugger.
+    // - Asi podemos abrir la consola en el navegador y debuggear.
+    // - Al llegar a está línea se podrá ver lo que se ha creado o hecho. 
     debugger;
 
     const precio = document.createElement('p');
@@ -160,3 +185,7 @@ function limpiarHTML() {
         resultado.removeChild(resultado.firstChild);
     }
   }
+
+
+// ### Para más información busca: Chrome Developer tools
+// ### Ofuscar el código y hacerlo más complejo: https://javascript2img.com/

@@ -7,6 +7,7 @@
 
 // ? Le pasamos un selector como si fuera de css
 // ? Solo retornará el primero que encuentre
+// ? Nos traera el Nodo como tal
 const card = document.querySelector('.card');
 console.log(card);
 

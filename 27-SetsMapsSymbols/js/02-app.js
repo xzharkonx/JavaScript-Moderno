@@ -2,9 +2,9 @@
 // # 187. Qué es un Weakset y en que se diferencia de un Set
 
 // * Weakset
-// ? - Solo se le pueden pasar o agregar Objetos
-// ? - No son iterables
-// ? - No se les puede conocer la longitud con .size
+// - Solo se le pueden pasar o agregar Objetos
+// - No son iterables
+// - No se les puede conocer la longitud con .size
 
 const weakset = new WeakSet();
 

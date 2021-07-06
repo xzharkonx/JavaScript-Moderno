@@ -2,7 +2,7 @@
 // #  99. .querySelectorAll
 
 // ? .querySelectorAll va a retornarte todos los elementos que cumplan la condición del selector.
-
+// ? Nos traera eun array de ellos.
 const cards = document.querySelectorAll('.card');
 console.log(cards);
 

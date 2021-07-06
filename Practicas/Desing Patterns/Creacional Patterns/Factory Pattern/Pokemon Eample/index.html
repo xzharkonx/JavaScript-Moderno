@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Factory Pokemon</title>
+</head>
+<body>
+    <div class="container">
+        <header><h1 class="title">Fábrica de enemigos</h1></header>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2 class="subtitle">Aquí se elaborarán los enemigos con el Patrón Fábrica.</h2>
+                <p>Utilizaremos el Patrón de Diseño llamado Fábrica para facilitar la creación de estos elementos.</p>
+                
+                <label class="tipoFabricaLabel" for="tipoFabrica">Tipo de fabricación:</label>
+                <select class="tipoFabricaSelect" name="tipoFabrica" id="tipoFabrica">
+                    <option value="randomEnemies">Enemigos Al Azar</option>
+                    <option value="randomDifficultEnemies">Enemigos más mamadisimos</option>
+                    <option value="goombaEnemies">Enemigos Goomba</option>
+                </select>
+                <br>
+                <button type="button" class="createEnemyButton" id="createEnemy">
+                    Crear Enemigos
+                </button>
+                <button type="button" class="showEnemyButton" id="showEnemies">
+                    Ver Enemigos
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <p>Luis Eduardo Garcia mercado &copy; 2021</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

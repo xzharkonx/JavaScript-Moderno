@@ -47,6 +47,11 @@ console.log(iterador.next().value); // undefined // Ya no hay más valores.
 
 // ? Cada .next avanza al siguiente yield.
 
+// ! Otra forma y la mejor podría ser la siguiente
+// ? Destructuraremos los resultados de ir al sigiente elemento
+// ? en el generador, así obtendremos el valor de la página
+// ? y también si ya a terminado de recorrerlos o no. 
+// const { value, done} = iterador.next();
 
 // ## Generador para carrito de compras.
 

@@ -45,3 +45,16 @@ card.className = 'clase-1 clase-2';
 
 // * Eliminando un nombre directamente a la clase
 // card.className = '';
+
+// * Verificando si contiene una clase
+// ? Utilizaremos el método classList seguido del método contains y le pasamos una cadena de texto con
+// ? la cual vamos a comprobar si existe esa clase en esa lista de clases.
+card.classList.contains('clase-1') ? console.log('Tiene la clase de: clase-1') : console.log('No tiene esa clase');
+
+// * Quitar y poner una clase
+// ? Utilizaremos el metodo de toggle y le pasaremos una cadena de texto con la clase que queremos
+// ? quitar o poner, actuara como un booleano.
+// ! Generalmente será sobre algún evento de algún botón que se preciona para quitar o para poner
+// btn.classList.toggle('myStyle');
+
+// Más info en : https://www.w3schools.com/howto/howto_js_toggle_class.asp

@@ -124,3 +124,8 @@ export function cargarEdicion(cita) {
     editando = true;
 
 }
+
+// Agregando función de prueba.
+export function suma(a, b){
+    return a + b;
+}

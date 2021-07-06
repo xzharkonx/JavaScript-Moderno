@@ -32,8 +32,8 @@ persona.tipoCliente = 'Premium';
 persona.saldo = 500;
 
 console.log(persona);
-// console.log(persona.nombre);  // !! No funcionara!
-console.log(persona[nombre]); // ? Funcionara!
+// console.log(persona.nombre);  // !! No funcionara! porque nombre no es una variable.
+console.log(persona[nombre]); // ? Funcionara! Se le pasa directamente el Objeto.
 
 // ! Las propiedades que tengamos como Symbols no son iterables
 for(let i in persona){

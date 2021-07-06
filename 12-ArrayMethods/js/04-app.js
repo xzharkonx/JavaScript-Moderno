@@ -51,6 +51,7 @@ console.log("\n");
 // ? Todos los productos que empiecen su nombre con T
 
 const resultado4 = carrito.filter(p => p.nombre[0] == 'T');
+const resultado6 = carrito.filter(p => p.nombre.includes(letra));
 
 console.log("\n");
 

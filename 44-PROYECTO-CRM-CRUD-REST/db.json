@@ -1,11 +1,25 @@
 {
   "clientes": [
     {
-      "nombre": "Juan NUEVO!",
-      "email": "correo2@correo.com",
-      "telefono": "12",
-      "empresa": "12212",
-      "id": 26
+      "nombre": "Luis",
+      "email": "xcorreox@correo.com",
+      "telefono": "7122334455",
+      "empresa": "systemwoork",
+      "id": 1
+    },
+    {
+      "nombre": "Eduardo",
+      "email": "xzharkonx@gmail.com",
+      "telefono": "7122302540",
+      "empresa": "systemwoork",
+      "id": 2
+    },
+    {
+      "nombre": "Juan",
+      "email": "JuanitoBanana@hotmail.com",
+      "telefono": "7111223344",
+      "empresa": "BananaXpress",
+      "id": 3
     }
   ]
 }

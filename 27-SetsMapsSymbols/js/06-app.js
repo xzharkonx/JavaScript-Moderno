@@ -55,7 +55,7 @@ function crearIterador(carrito){
 
         // * Reiniciar el iterador
         // ? Esta línea está un poco rara pero funciona
-        reiniciar: () => i === 0 ? 'No reiniciado' : i=0 & console.log('Reiniciado') // & console.log('Hola mundo')
+        reiniciar: () => i === 0 ? 'No reiniciado' : i=0 & console.log('Reiniciado') // ... & console.log('Hola mundo')
     }
 }
 

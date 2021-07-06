@@ -1,11 +1,11 @@
 
 // # 186. Sets y sus Características.
 
-// ? - Un set te va a permitir crear una lista de valores sin duplicados.
-// ? - Cuando se maneja un volumen grande de datos tiende a ser más rápido que
-// ?      un objeto o que un arreglo.
-// ? - Son iterables.
-// ? - Se le puede pasar cualquier valor.
+// - Un set te va a permitir crear una lista de valores sin duplicados.
+// - Cuando se maneja un volumen grande de datos tiende a ser más rápido que
+// -| un objeto o que un arreglo.
+// - Son iterables.
+// - Se le puede pasar cualquier valor.
 
 const carrito = new Set();
 

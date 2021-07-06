@@ -4,10 +4,10 @@
 // * FETCH API Es nativo de JavaScript.
 // ? status: 200 
 //   - Significa que se logro hacer correctamente la consulta,
-//     pudo encontrar el archivo.
+//   -| pudo encontrar el archivo.
 // ! status: 400 
 //   - Significa que no se logro hacer la consulta,
-//     y no pudo encontrar el archivo.
+//   -| y no pudo encontrar el archivo.
 
 // ! Muy importante
 // ? FETCH API Solamente puede leer texto plano o JSON.
@@ -53,7 +53,7 @@ function obtenerDatos() {
 
         }) 
         .then( datos => {
-
+            
             // * Mandamos a imprimir los datos que retornamos.
             console.log(datos);
         })

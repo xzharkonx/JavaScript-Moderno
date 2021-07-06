@@ -7,13 +7,13 @@
 // ? sobre los lugares que son de tu interés.
 
 const navegacion = document.querySelector('.navegacion');
-console.log(navegacion);
+console.log(navegacion); // Nodo (y adentro tendrá los otros nodos hijos)
 
 
 // Primer elemento de la navegación
-console.log(navegacion.firstElementChild);
+console.log(navegacion.firstElementChild); // Nodo
 // último elemento de la navegación
-console.log(navegacion.lastElementChild);
+console.log(navegacion.lastElementChild); // Nodo
 
 
 // ## Traversing the DOM - Del Padre al Hijo.
@@ -28,7 +28,7 @@ console.log(navegacion.lastElementChild);
 
 // ? Para ello existe mejor .children, que esta si nos traerá solo los elementos html que 
 // ? tengamos dentro que hayamos creado.
-console.log(navegacion.children);
+console.log(navegacion.children); // Lista de nodos hijos de nav
 
 // for(const i in navegacion.children){
 //     console.log(navegacion.children[i].innerText);
@@ -61,9 +61,9 @@ console.log(navegacion.children[1].nodeType); // Nos devuelve un número de abaj
 // DOCUMENT_FRAGMENT_NODE	     11
 // NOTATION_NODE	             12
 
-const card = document.querySelector('.card');
-console.log(card.children[0]);
-console.log(card.children[1].children[0]);
+const card = document.querySelector('.card'); // Un solo nodo, no lleva All.
+console.log(card.children[0]); // Primer Nodo [img] de todos los cards
+console.log(card.children[1].children[0]); // Primer Nodo [p] de la lista del segundo elemento [div] de cards
 console.log(card.children[1].children[1].textContent);
 
 // ? Mira como con varios selectores comenzamos a navegar sobre sus diferentes elementos

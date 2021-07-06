@@ -1,21 +1,25 @@
 
 // # 188. Que son los Maps.
 
-// ? - Son listas ordenadas en llave y valor,
-// ? - Son como un Objeto pero de una sola propiedad, es decir,
-// ?   una llave y un valor.
-// ? - La llave y el valor pede ser cualquier tipo de dato.
-// ? - Los Maps tienen mejor performance que un Objeto.
-// ? - Son especialmente diseñados para agregar o quitar elementos o para
-// ?   recorrerlos.
-// ? - Si trabajas con Agregar o Quitar Elementos, un map tendrá mayor 
-// ?   performance que un Objeto.
+// - Son listas ordenadas en llave y valor,
+// - Son como un Objeto pero de una sola propiedad, es decir,
+// -| una llave y un valor.
+// - La llave y el valor pede ser cualquier tipo de dato.
+// - Los Maps tienen mejor performance que un Objeto.
+// - Son especialmente diseñados para agregar o quitar elementos o para
+// -| recorrerlos.
+// - Si trabajas con Agregar o Quitar Elementos, un map tendrá mayor 
+// -| performance que un Objeto.
 
 // * Creando un Map
 const cliente = new Map();
 
 // * Otra forma de crear Maps
-const paciente = new Map([['nombre', 'paciente'], ['cuarto', 'no definido']]);
+// const paciente = new Map([['nombre', 'paciente'], ['cuarto', 'no definido']]);
+const paciente = new Map([
+                            ['nombre', 'paciente'],
+                            ['cuarto', 'no definido']
+                        ]);
 paciente.set('dr', 'Dr Asignado');
 
 // * Sobreescribiendo valores, le pasaremos una llave (key) que ya este y ese valor cambiará.

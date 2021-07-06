@@ -17,6 +17,8 @@ enlace.href = '/nuevo-enlace';
 enlace.target = '_blank';
 
 // Atributos personalizados
+// Atributo: data-enlace
+// Valor: nuevo-enlace
 enlace.setAttribute('data-enlace', 'nuevo-enlace');
 
 // Agregandole alguna clase
@@ -26,7 +28,12 @@ enlace.classList.add('alguna-clase', 'otra-clase');
 // Agregando una función
 enlace.onclick = miFuncion;
 
-function miFuncion(){
+function miFuncion(e){
+    // Para prevenir que nos lleve a esa ruta
+    // e será el elemento/nodo en sí
+    e.preventDefault(); 
+    // Mensaje
+    console.log(e.target.textContent);
     alert('Diste Clic');
 }
 
@@ -56,8 +63,7 @@ navegacion.insertBefore(enlace, navegacion.children[1]);
 
 // ? También podemos agregar HTML con innerHtml
 
-// ## Crear un CARD de forma dinámica ---------------------------------------------------------------
-
+// ## Crear un CARD  de forma dinámica ---------------------------------------------------------------
 // Crearemos 3 parrafos
 const parrafo1 = document.createElement('P');
 parrafo1.textContent = 'Concierto';

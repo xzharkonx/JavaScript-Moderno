@@ -81,6 +81,7 @@ function buscarImagenes(){
             totalPaginas = calcularPaginas(resultado.totalHits);
             // console.log(totalPaginas);
             // * Mostrando imagenes
+            // resultado.hits es un array de objetos con la info de imagenes
             mostrarImagenes(resultado.hits);
         })
 
@@ -103,6 +104,7 @@ function *crearPaginador(total){
 }
 
 function calcularPaginas(total) {
+    // Math.ceil() redondea hacia arriba apartir de .5
     return parseInt(Math.ceil(total / registrosPorPagina));
 }
 

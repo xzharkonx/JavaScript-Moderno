@@ -48,19 +48,44 @@ function mostrarAlerta(mensaje) {
 
 }
 
-function buscarImagenes() {
+// # Aquí colocaremos Async Await
+// ? Agregamos async
+
+async function buscarImagenes() {
 
     const termino = document.querySelector('#termino').value;
 
-    const key = '';
+    // * Aquí colocaremos nuestra API KEY
+
+    const key = '21289517-5af842cb8e92da4d99a7697ba';
     const url = `https://pixabay.com/api/?key=${key}&q=${termino}&per_page=${registrosPorPagina}&page=${paginaActual}`;
 
-    fetch(url)
-        .then(respuesta => respuesta.json())
-        .then(resultado => {
-            totalPaginas = calcularPaginas(resultado.totalHits);
-            mostrarImagenes(resultado.hits);
-        })
+    // ## Sin fetch normal
+    // fetch(url)
+    //     .then(respuesta => respuesta.json())
+    //     .then(resultado => {
+    //         totalPaginas = calcularPaginas(resultado.totalHits);
+    //         mostrarImagenes(resultado.hits);
+    //     })
+
+    // ## Con Sync Await
+    try {
+        
+        // ? Este await va a bloquear la ejecución de codigo.
+        const respuesta = await fetch(url);
+        const resultado = await respuesta.json();
+        
+        // ? Por lo tanto los metodos de abajo se bloqueará su ejecución
+        // ? hasta que se haya completado la solicitud de información.
+        
+        totalPaginas = calcularPaginas(resultado.totalHits);
+        mostrarImagenes(resultado.hits);
+
+    } catch (error) {
+        
+        // !! En caso de error, mostrarlo.
+        console.log(error);
+    }
 }
 
 // Generador que va a registrar la cantidad de elementos de acuerdo a las paginas

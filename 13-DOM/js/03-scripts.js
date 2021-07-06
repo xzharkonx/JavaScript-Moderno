@@ -1,7 +1,7 @@
 
 // # 97. getElementById
 // ? Solo selecciona un elemento y si hay varios id repetidos solo seleccionará el primero
-
+// Trae directamente el nodo
 const formulario = document.getElementById('formulario');
 console.log(formulario);
 

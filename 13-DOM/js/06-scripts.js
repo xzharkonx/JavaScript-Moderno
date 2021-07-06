@@ -6,7 +6,7 @@ const encabezado = document.querySelector('.contenido-hero h1');
 const encabezadoTexto = document.querySelector('.contenido-hero h1').textContent;
 
 console.log(encabezado); // Nodo h1.
-console.warn(encabezadoTexto); // Contenido de texto del Nodo h1.
+console.warn(encabezadoTexto); // Contenido de texto del Nodo h1. Solo el texto.
 
 // ## Accediendo al texto del encabezado
 // ? hay 3 formas distintas
@@ -14,7 +14,7 @@ console.warn(encabezadoTexto); // Contenido de texto del Nodo h1.
 // * 1ra forma:
 console.log(encabezado.innerText);
 // Diferiencia: Si el elemento de arriba llegará a perder la visibilidad con css (visibility: hiden;)
-// el elemento desaparece y los de abajo si permanecen.
+// el elemento desaparece y los de abajo si permanecen. Solo el texto.
 
 // * 2da forma:
 console.log(encabezado.textContent);

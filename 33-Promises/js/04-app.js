@@ -8,7 +8,7 @@ const paises = [];
 // ? Utilizararemos una  Expresión de Función (Function Expression).
 // ? de tipo Flecha que devolvera un Objeto de tipo promesa.
 // ? En este caso pais viene a ser una parametro de esa función nuevoPais.
-
+// ! Será una función que te retorne un Objeto de tipo Promise.
 const nuevoPais = pais => new Promise( resolve => {
 
     // * 2do. Se ejecuta el promise con su contenido.
@@ -23,7 +23,8 @@ const nuevoPais = pais => new Promise( resolve => {
 
 })
 
-// * 1ro. Se ejecuta la función pasandole el parametro
+// * 1ro. Se ejecuta la función pasandole el parámetro.
+// - Al ejecutarla nos devolverá la promesa.
 nuevoPais('Alemania')     // ! Función ejecutandose.
     .then(resultado => {  // ? Resibiendo el valor del resolve (el mensaje) de la promesa.
 
