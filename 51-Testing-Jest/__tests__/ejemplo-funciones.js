@@ -25,7 +25,7 @@ describe('Testing a las funciones de Suma y Resta', () => {
     test('Suma de 20 y 30', () => {
        
         // ? Al expect le pasaremos la función que queramos comprobar 
-        // ?    ejecutandola con sus parametros.
+        // ? ejecutandola con sus parametros.
         // ? La función .toBe() le pasaremos lo que esperamos recibir.
         expect(suma(20, 30)).toBe(50);
 
@@ -34,7 +34,7 @@ describe('Testing a las funciones de Suma y Resta', () => {
     test('Resta de 10 - 5', () => {
        
         // ? Al expect le pasaremos la función que queramos comprobar 
-        // ?    ejecutandola con sus parametros.
+        // ? ejecutandola con sus parametros.
         // ? La función .toBe() le pasaremos lo que esperamos recibir.
         expect(resta(10, 5)).toBe(5);
 

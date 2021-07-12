@@ -60,6 +60,18 @@ describe('Testing', () => {
         // * Ahora que se hizo el snapshot, si cambiamos nuevamente
         // * nuestro Objeto Cliente, no pasará la prueba.
 
+        // ! Si de verdad queremos probar con otro objeto desde 0
+        // ! entonces tendríamos que:
+        // - Editar el archivo de __snapshots__
+        // - Eliminar el archivo de __snapshots__
+        // - Actualizar el __snapshots__ utilizando el siguiente comando:
+        // -- Comando: npm t -- -u
+        // ? Así actualizaremos el snapshot con el que tengamos en esta prueba.
+        // * Reescribira el anterior, lo va a actualizar.
+
+        // ! Esto es por si la versión anterior de ese objeto ya no nos sirve con eso
+        // ! podremos actualizarlo.
+
     });
     
 });

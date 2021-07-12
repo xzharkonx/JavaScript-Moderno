@@ -6,7 +6,7 @@ Citas {
     Object {
       "fecha": "16-06-2021",
       "hora": "07:15",
-      "id": 1623890138964,
+      "id": 1626132222543,
       "mascota": "Sinfon",
       "propietario": "Luis Eduardo",
       "sintomas": "Solo duerme",
@@ -22,7 +22,7 @@ Citas {
     Object {
       "fecha": "16-06-2021",
       "hora": "07:15",
-      "id": 1623890138964,
+      "id": 1626132222543,
       "mascota": "Evil",
       "propietario": "Luis Eduardo",
       "sintomas": "Solo duerme",

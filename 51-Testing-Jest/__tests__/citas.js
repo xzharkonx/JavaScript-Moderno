@@ -10,6 +10,11 @@
 // * Para actualizar los snashopts aquí será últil el comando de: 
 // -: npm t -- -u 
 
+// !! Error: Dará error al hacer test porque el id siempre esta cambiando
+// !! debido a que hicimos un snapshot de este Objeto, por lo que la única solución
+// !! es eliminar el snapshot de este archivo por completo y volver a correr la prueba
+// ! Se volvera a crear automáticamente el Snapshot.
+
 import Citas from '../js/classes/Citas';
 
 describe('Probar la clase de Citas', () => {

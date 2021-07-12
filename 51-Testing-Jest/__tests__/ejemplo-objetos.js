@@ -35,7 +35,7 @@ describe('Testing al Cliente', () => {
         expect(cliente.nombre).not.toBe('Pedro');
     });
 
-    test('No tiene 500', () => { // !! Esta prueba no pasa porqe si tiene 500
+    test('No tiene 500', () => { // !! Esta prueba no pasa porque si tiene 500
         // expect(cliente.balance).not.toBe(500);  // !! Error
         expect(cliente.balance).not.toBe(400);  // * Si pasa, pero no es lo que queremos.
     });

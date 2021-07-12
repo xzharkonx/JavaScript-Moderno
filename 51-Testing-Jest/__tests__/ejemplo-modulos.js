@@ -50,3 +50,9 @@ describe('Suma de 2 números', () => {
 // sintaxis, tanspilarlo con babel y te va a crear una versión en la que Internet Explorer si pueda leer.
 
 // Con babel puedes utilizar todo lo nuevo para darle incluso soporte sobre un navegador muy viejo.
+
+// - Crear archivo .babelrc
+// - Instalar dependencia babel preset
+// -- Dependencia: npm i --save-dev @babel/preset-env
+
+// ? Agregar configuración al archivo: -babelrc
