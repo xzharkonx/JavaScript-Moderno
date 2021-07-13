@@ -35,6 +35,11 @@ describe('Valida el formulario', () => {
         cy.get('[data-cy="alerta"]')
             .should('have.class', 'alert-danger')
 
+        // * Verificando la Clase y el texto (todo junto)
+        // cy.get('[data-cy="alerta"]')
+        //     .should('have.class', 'alert-danger')
+        //     .invoke('text')
+        //     .should('equal', 'Todos los campos son Obligatorios')
         
 
     })

@@ -54,8 +54,8 @@ describe('Carga la página principal', () => {
         // * Verificar el texto de las citas.
         // ? Funciona con o sin comillas.
         cy.get('[data-cy=citas-heading]')
-            .invoke('text')
-            .should('equal','No hay Citas, comienza creando una');
+            .invoke('text') // Seleccionamos el texto.
+            .should('equal','No hay Citas, comienza creando una'); // Igual a el texto.
         
         // * Verificar que el texto no sea igual al de las citas.
         // ? Funciona con o sin comillas.
