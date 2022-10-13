@@ -40,7 +40,7 @@ const producto3 = {
     precio: 50
 }
 
-// ? lo agregaremos con el método de unshift
+// ? lo agregaremos al inicio del arreglo con el método de unshift
 carrito.unshift(producto3);
 // ? Eliminar el primer elemento con el método de shift
 // carrito.shift(producto3);

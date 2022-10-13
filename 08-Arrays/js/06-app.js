@@ -54,5 +54,6 @@ console.table(resultado);
 // ! Mira que en el caso de los objetos, solo únira aquellos atributos diferentes y los que
 // ! se repitan se sobreescribirán con el valor repetido del atributo del último objeto agregado.
 
+// * Mira como los atributos del objeto producto se sobreescriben por los del objeto producto4
 const resultado2 = {...producto, ...producto4}
 console.log(resultado2);

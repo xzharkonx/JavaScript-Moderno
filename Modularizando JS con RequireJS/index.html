@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modularizando JS con RequireJS</title>
+</head>
+<body>
+
+    <h1>Ejemplo</h1>
+    <form action="">
+        <div class="">
+            <label for="">Número 1:</label>
+            <input type="text" id="num1">
+        </div>
+        <div>
+            <label for="">Número 2:</label>
+            <input type="text" id="num2">
+        </div>
+        <div class="">
+            <button type="button" id="btncalcular">Calcular</button>
+        </div>
+        <div class="">
+            <label for="">Suma: <span id="suma"></span></label><br>
+            <label for="">Resta: <span id="resta"></span></label><br>
+            <label for="">Multiplicación: <span id="multiplicacion"></span></label><br>
+            <label for="">División <span id="division"></span></label><br>
+        </div>
+    </form>
+    <select name="prueba" id="prueba">
+        <option value="op1" id="op1">Hola</option>
+        <option value="op2" id="op2">Mundo</option>
+        <option value="op3" id="op3">Luis</option>
+    </select>
+    <!-- Estos se ligarán utilizando require.js -->
+    <!-- <script src="js/lib/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/operaciones.js"></script> -->
+    <!-- Se agrega la librería y el valor de data-main sirve para el punto 
+    de entrada de en donde configuraremos esta librería para nuestro uso. -->
+    <script data-main="js/main" src="js/lib/require.js"></script>
+</body>
+</html>
