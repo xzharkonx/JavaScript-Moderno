@@ -33,3 +33,7 @@ console.log(resultado);
 
 const resultado2 = {...producto, ...medidas}
 console.log(resultado2);
+
+// * Copiando un Objeto y agregandole atributos.
+const pesa = {marca:"SpiritGym", ...medidas}
+console.log(pesa);

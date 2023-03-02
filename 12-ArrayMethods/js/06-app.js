@@ -13,7 +13,8 @@ const carrito = [
 ];
 
 // * El método .every (AND)
-// ? Vamos a ver si es verdad que el precio de todos los productos es menor a mil
+// ? Vamos a ver si es verdad que el precio de todos los productos es menor a mil-
+// ? Si cumple que todos los elementos y solo si todos tienen precio menor a 1000 devuelve true.
 const resultado = carrito.every( producto => producto.precio < 1000);
 
 // ? Vamos a ver si es falso que el precio de todos los productos es menor a 500
@@ -22,6 +23,7 @@ console.log(resultado);
 console.log(resultado2);
 
 // ## El método .some (OR)
-// ? Revisa que si por lo menos uno cumple la condición
+// ? Revisa que si por lo menos uno cumple la condición,
+// ? si alguno de los elementos tiene precio menor a 500 devuelve true.
 const resultado3 = carrito.some( producto => producto.precio < 500);
 console.log(resultado3);

@@ -11,7 +11,7 @@ const meses = ['Enero', 'Febrero', 'Marzo'];
 // ? Agregar al final del arreglo.
 meses.push('Abril');
 meses.push('Mayo');
-
+// meses.pop() // Elimina el último valor y lo retorna también.
 console.table(meses);
 
 // ## Ejemplo de carrito de compras

@@ -9,7 +9,7 @@ console.log(typeof numero);
 
 // ## Null
 // * Este por lo regular se asigna pero aveces llega a obtenerse cuando se capturan datos
-// *  y no se obtiene nada.
+// * y no se obtiene nada.
 let numero2 = null;
 console.log(numero2);
 // ? Ecma nos dice que los null deben de ser un objeto

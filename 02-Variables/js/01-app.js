@@ -27,8 +27,8 @@ var categoria = 'Computadoras',
     calificación = 5;
 
 // Las variables no pueden inicializar con numero.
-// var 99dias; // Esto está mal.
-var dias99; // Esto está correcto.
+// var 99dias; // !! Esto está mal.
+var dias99; // * Esto está correcto.
 
 // Si pueden iniciarse con un _
 var _01;

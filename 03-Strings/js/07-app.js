@@ -21,11 +21,13 @@ console.log(precio);
 
 // * Cambiamos de numero a String
 console.log(precio.toString());
-// * Cambiamos de numero a String
+
+// * Cambiamos de String a Número
 // ? Se utiliza el método parseInt y se le pasa un String que será
 // ? convertido a entero en base decimal, para ello se agrega otro
-// ? parametro con el valor de 10.
-console.log(parseInt(precio2, 10));
+// ? parametro con el valor de 10 (este es opcional).
+console.log(parseInt(precio2, 10)); // ? El 10 indica la base pero es opcional.
+console.log(parseInt(precio2));
 
 // ! Podemos comprobar si la conversión es valida con isNaN()
-// ! Es decir, si hubo o no un error al convertir un String a un número
+// ! Es decir, si (true) hubo o no un error al convertir un String a un número

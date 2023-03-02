@@ -9,7 +9,7 @@
 
 // ! Pero los objetos si se pueden reasignar, eso pasa porque una variable 
 // ! aunque este declaradá como const al estar en un objeto, sus propiedades
-// !  si se pueden sobreescribir o eliminar.
+// ! si se pueden sobreescribir o eliminar.
 
 // ! Pero los Objetos también se pueden congelar o sellar. Para interpretar const.
 // ! Esto se verá más adelante...

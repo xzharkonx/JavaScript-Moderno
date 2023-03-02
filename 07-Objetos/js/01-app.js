@@ -9,7 +9,7 @@ const disponible = true;
 
 // ## Object literal
 const producto = {
-    nombre : "Monitor de 20 Pulgadas",
+    nombre: "Monitor de 20 Pulgadas",
     precio: 300,
     disponible: true
 }

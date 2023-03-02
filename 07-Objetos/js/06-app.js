@@ -37,13 +37,15 @@ const producto = {
 // console.log(nombre, medida);
 
 // ### Acceder a los valores dentro de un objeto interno.
-const { nombre, informacion, informacion: { detalles }, informacion: { fabricacion: { pais } } } = producto;
+const { nombre, informacion, informacion: { detalles }, informacion: { fabricacion, fabricacion: { pais } } } = producto;
 // const { nombre, informacion, informacion: { peso, medida } } = producto;
 console.log(nombre);
 // Traemos el objeto informacion que esta dentro del objeto producto.
 console.log(informacion);
 // Traemos el array que esta dentro del objeto producto.
 console.log(detalles);
+// Traemos la fabricacion por aparte.
+console.log(fabricacion)
 // Traemos el atributo pais que esta dentro de los objetos de informacion y luego de fabricacion.
 console.log(pais);
 

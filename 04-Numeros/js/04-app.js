@@ -19,4 +19,5 @@ console.log (resultado);
 // Por lo que si son 50 le sumará el 16% y por lo que 16% es 8 u 7.99999999
 // nos mostrará 57.99999999
 resultado = (20 + 30) * 1.16;
+// resultado = Math.round((20 + 30) * 1.16);
 console.log (resultado);

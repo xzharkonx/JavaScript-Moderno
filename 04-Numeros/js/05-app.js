@@ -1,5 +1,5 @@
 
-// # 25. Incremento o Decrementos
+// # 25. Incremento o Decremento
 
 let puntaje = 5;
 console.log(puntaje);

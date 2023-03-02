@@ -33,7 +33,7 @@ console.log(producto.substr(0,10));
 // ? y tratará de mostrarte algo con respecto a los valores que tiene si colocas el primero mayor
 // ? que el segundo. 
 // ! Es como decirle, desde el 2 recorreme 1 hacia adelante.
-console.log(producto.substr(2,1)); // m
+console.log(producto.substr(2,1)); // n
 
 // ## substring()
 // ? Y substring() lo hace pero hacia atrás. 

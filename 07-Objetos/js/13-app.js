@@ -21,3 +21,5 @@ console.log( Object.entries( producto ));
 Object.values(producto).forEach(element => console.log(element));
 // Recorriendo las claves y los valores directamente del objeto.
 Object.entries(producto).forEach(element => element.forEach(values => console.log(values)));
+// Con map.
+// Object.entries(producto).map(element => element.map(values => console.log(values)));

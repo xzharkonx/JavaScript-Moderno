@@ -61,9 +61,10 @@ console.log(resultado);
 
 // ! Nota: se debe especificar el Array como segundo parametro, si no dará error.
 // ? Recuerda. El primer parametro es el del array y el segundo parametro es que elemento 
-// ? que irá iterando en la litsta del carito que están en la función flecha.
+// ? que irá iterando en la lista del carito que están en la función flecha.
 
 let lista = carrito.reduce((listanombres,producto) => listanombres = [...listanombres, producto.nombre] , []);
+// let lista = carrito.reduce((listanombres,producto) => listanombres.push(producto.nombre) , []); // !! Esta da error.
 lista.forEach(e => console.log(e));
 console.log("\n---------------------------------------\n");
 

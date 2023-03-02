@@ -7,7 +7,7 @@ const numero3 = "Uno";
 const numero4 = 20;
 
 // * Con typeof le pedimos que nos muestre el tipo de dato que es.
-console.log(typeof numero1);
+console.log(typeof numero1); // string
 
 
 // ## Convertir un String a número con Number.parseInt(var)
