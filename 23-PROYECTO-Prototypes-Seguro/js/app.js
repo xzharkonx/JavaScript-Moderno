@@ -101,7 +101,7 @@ UI.prototype.mostrarMensaje = (mensaje, tipo) => {
 
     // ? Insertar en el HTML
     const formulario = document.querySelector('#cotizar-seguro');
-    formulario.insertBefore(div, document.querySelector('#resulado'));
+    formulario.insertBefore(div, document.querySelector('#resultado'));
 
     // ? Desaparecemos el mensaje
     setTimeout(() => {

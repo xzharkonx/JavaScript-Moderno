@@ -10,7 +10,7 @@ const producto = {
     mostrarInfo: function(){
         console.log(`El Producto: ${this.nombre} tiene un precio de: ${this.precio}`);
     },
-    // ! Mira que aquí en los arrayfunction vez de this llamamos al objeto
+    // ! Mira que aquí en los arrayfunction en vez de this llamamos al objeto para que funcione.
     oferta: () =>  console.log(`La oferta es de ${producto.precio * 0.8}`)
 }
 const producto2 = {

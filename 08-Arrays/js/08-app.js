@@ -42,9 +42,9 @@ const [ , , , , quinto] = numeros;
 console.log(quinto);
 
 // * Ahora uno que contenga en variables los 2 primeros y los 3 últimos en un arreglo.
-const [ pElemento, sElemento, ...tElemento ] = numeros;
+const [ pElemento, sElemento, ...tElemento ] = numeros; // 10, 20, [30,40,50]
 // ? Aquí tendriamos un arreglo con los últimos 3 elementos del arreglo original.
-console.log(tElemento);
+console.log(tElemento); // [30,40,50]
 
 // Por lo que a partir de la posición podemos tomar cualquier cantidad de elementos del arreglo
 // y anteponiendo los 3 puntitos...

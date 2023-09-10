@@ -200,7 +200,7 @@ const citaObj = {
 // ## Agrega datos al objeto de cita
 function datosCita(e){
     
-    // ? Utiliaremos los corchetes para acceder al atributo o propiedad del Objeto
+    // ? Utilizaremos los corchetes para acceder al atributo o propiedad del Objeto
     // ? para referirnos a esa variable según sea el input.
     citaObj[e.target.name] = e.target.value;
 }
@@ -239,7 +239,8 @@ function nuevaCita(e){
         citaObj.id = Date.now();
 
         // Creando una nueva cita.
-        // administrarCitas.agregarCita(citaObj); // ! De esta forma tendremos un Error de Objeto repetido.
+        // ! De esta forma tendremos un Error de Objeto repetido porque apunta a la misma referencia.
+        // administrarCitas.agregarCita(citaObj); 
         // ? Haremos una copia del objeto para eliminar su referencia
         administrarCitas.agregarCita({...citaObj});
 

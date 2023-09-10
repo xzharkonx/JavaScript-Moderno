@@ -24,15 +24,24 @@ header {
 header h1 {
   color: white;
 }
+
+/* Primero apunta a .lista-citas que es el div padre */
+/* Luego dentro tendremos div hijos para .cita */
 .lista-citas .cita {
   border-bottom: 1px solid #e1e1e1;
   padding: 2rem;
   padding-bottom: 3rem;
   
 }
+/* Mira que para señalar el último de la clase que hay es con
+la pseudoclase :last-of-type */
+/* Para el último div(hijo) aplica lo siguiente: */
 .lista-citas .cita:last-of-type {
   border-bottom: 0;
 }
+/* .lista-citas .cita:first-of-type {
+  border-bottom: 0;
+} */
 
 .lista-citas .cita p {
   margin:0;

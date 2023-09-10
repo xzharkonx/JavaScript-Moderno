@@ -34,6 +34,12 @@ console.log(resultado);
 const resultado2 = {...producto, ...medidas}
 console.log(resultado2);
 
+// En cambio aquí crearia un objeto con 2 atributos de tipo objeto para el producto y para las medidas.
+// resultado3.producto y resultado3.medidas.
+// resultado3.producto.nombre y resultado3.medidas.peso
+const resultado3 = {producto, medidas}
+console.log(resultado3);
+
 // * Copiando un Objeto y agregandole atributos.
 const pesa = {marca:"SpiritGym", ...medidas}
 console.log(pesa);

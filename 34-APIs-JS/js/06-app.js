@@ -54,7 +54,7 @@ function ejecutarSpeechAPI() {
         speech.innerHTML = `Grabado: ${transcript}`
 
         const seguridad = document.createElement('P');
-        seguridad.innerHTML = `Seguridad de entendimiento: ${ parseInt(confidence * 100) } % `;
+        seguridad.innerHTML = `Serteza de entendimiento: ${ parseInt(confidence * 100) } % `;
 
         salida.appendChild(speech);
         salida.appendChild(seguridad);

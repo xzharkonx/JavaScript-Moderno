@@ -221,6 +221,8 @@ function agregarGasto(e){
     }
 
     // - Generar un objeto con el gasto y además le añadimos una propiedad más id.
+    // ! Esto es lo contrario a Destructuring, porque toma las variables como atributos
+    // ! para crear el objeto.
     const gasto = { nombre, cantidad, id: Date.now()}
     
     // Añade un nuevo gasto a la lista de este objeto.

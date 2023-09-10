@@ -8,10 +8,10 @@ const year = document.querySelector('#year'); // Apunta al Select del buscador p
 
 const marca = document.querySelector('#marca'); // Apunta al Select del buscador por marca para obtener la info.
 const minimo = document.querySelector('#minimo'); // Apunta al Select del buscador por minimo para obtener la info.
-const maximo = document.querySelector('#maximo'); // Apunta al Select del buscador por minimo para obtener la info.
-const puertas = document.querySelector('#puertas'); // Apunta al Select del buscador por minimo para obtener la info.
-const transmision = document.querySelector('#transmision'); // Apunta al Select del buscador por minimo para obtener la info.
-const color = document.querySelector('#color'); // Apunta al Select del buscador por minimo para obtener la info.
+const maximo = document.querySelector('#maximo'); // Apunta al Select del buscador por maximo para obtener la info.
+const puertas = document.querySelector('#puertas'); // Apunta al Select del buscador por puertas para obtener la info.
+const transmision = document.querySelector('#transmision'); // Apunta al Select del buscador por transmision para obtener la info.
+const color = document.querySelector('#color'); // Apunta al Select del buscador por color para obtener la info.
 
 
 // ## Generar un objeto con la búsqueda
@@ -98,7 +98,7 @@ function mostrarAutos(autos){
             ${marca} ${modelo} - ${year} - ${puertas} Puertas - Transmisión: ${transmision} - Precio: $
             ${precio} - Color: ${color}
         `;
-        autoHTML.style.borderBottom = 'solid 4px crimson'
+        autoHTML.style.borderBottom = 'solid 4px crimson';
 
         // insertar en el HTML
         resultado.appendChild(autoHTML);
@@ -218,71 +218,99 @@ function noResultado(){
 
 function filtrarMarca(auto){
     const {marca} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(marca){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si son iguales retornarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.marca === marca;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }
 function filtrarYear(auto){
     const {year} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(year){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si son iguales retorarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.year === year;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }
 function filtrarMinimo(auto){
     const {minimo} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(minimo){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si es mayor al minimo retorarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.precio >= minimo;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }
 function filtrarMaximo(auto){
     const {maximo} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(maximo){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si es menor al máximo retorarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.precio <= maximo;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }
 function filtrarPuertas(auto){
     const {puertas} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(puertas){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si son iguales retorarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.puertas === puertas;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }
 function filtrarTransmision(auto){
     const {transmision} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(transmision){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si son iguales retorarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.transmision === transmision;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }
 function filtrarColor(auto){
     const {color} = datosBusqueda;
-    // ? Si el dato que buscamos tiene algo
+    // ? Si el dato que buscamos tiene algo, comprobamos si es igual a lo que buscamos lo agregamos,
+    // ? si no, lo omitimos.
     if(color){
-        // ? Si son iguales retorarán el objeto por que cumple la condición.
+        // ? Si son iguales retorarán el objeto por que cumple la condición y devuelve true
+        // ? si no, entonces retornará false y por lo tanto no retornará el objeto.
         return auto.color === color;
     }
     // ? Si no retornará al elemento que tenia.
     return auto;
+    // ? O bien true porque siempre va a retornar el objeto porque no filtra nada.
+    // return true;
 }

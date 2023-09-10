@@ -12,6 +12,13 @@ const card = document.querySelector('.card');
 console.log(card);
 
 // * Podemos tener selectores especificos como en CSS
+// ! Así juntas las clases quiere decir que el nodo debe de
+// ! tener ambas clases.
+// const info = document.querySelector('.premium.info');
+
+// ! Así separadas quiere decir que el primer busca al nodo de 
+// ! la clase .premium y luego busca dentro de esta otro nodo
+// ! con la clase .info
 const info = document.querySelector('.premium .info');
 console.log(info);
 

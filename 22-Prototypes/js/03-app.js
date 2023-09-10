@@ -50,6 +50,7 @@ Cliente.prototype.nombreclienteSaldo = function(){
 // Cliente.prototype.retirarSaldo = retira => this.saldo -= retira; 
 
 // ! Este arrow function si funcionará porque no necesita acceder a los atributos del objeto.
+// ! Peeeroo... si necesitas pasarle el objeto al que le hará el cambio para saber a cual.
 Cliente.prototype.retirarSaldo = (cliente,retiro) => cliente.saldo -= retiro; 
 Cliente.prototype.saludo = "Hola mundo";
 

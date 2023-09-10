@@ -21,7 +21,7 @@ const producto = {
 
 console.log(producto);
 
-// ! No podemos guardar objetos ni podemos guardar Strings =/
+// ! No podemos guardar objetos pero si podemos guardar Strings =/
 // localStorage.setItem('producto', producto );
 
 // !! Pero si podemos hacer lo siguiente.

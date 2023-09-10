@@ -62,3 +62,57 @@ const descuento = mensaje => console.log(mensaje);
 // !  3.- Promesa pendiente: pending. Cuando la promesa está vacia.
 // !                                  Aún no sabe el promise si se va a
 // !                                  cumplir o no.
+
+
+
+// Ejemplo de animalitos
+
+const jaulaHervivoros = [];
+const jaulaCarnivoros = [];
+let hervivoro = 0;
+let carnivoro = 0;
+
+const agregarAnimal = animal => new Promise(resolve => {
+
+    switch(animal.tipo){
+
+        case 'Hervivoro':
+            jaulaHervivoros.push(animal);
+            hervivoro = jaulaHervivoros.length;
+            resolve(`Animal Hervivoro agregado: ${animal.nombre}.`);
+            break
+        case 'Carnivoro':
+            jaulaCarnivoros.push(animal);
+            carnivoro = jaulaCarnivoros.length;
+            resolve(`Animal Carnivoro agregado: ${animal.nombre}.`);
+            break
+        default:
+            resolve(`Animal "${animal.tipo}" dejado en libertad: ${animal.nombre}.`);
+        
+    }
+
+});
+
+agregarAnimal({nombre:'Vaca',tipo:'Hervivoro'})
+    .then(animal => {
+        console.log(animal);
+        console.log(`Hervivoros [${hervivoro}] & Carnivoros [${carnivoro}]`);
+        return agregarAnimal({nombre:'Perro',tipo:'Carnivoro'});
+    })
+    .then(animal => {
+        console.log(animal);
+        console.log(`Hervivoros [${hervivoro}] & Carnivoros [${carnivoro}]`);
+        return agregarAnimal({nombre:'Panda',tipo:'Obnivoro'});
+    })
+    .then(animal => {
+        console.log(animal);
+        console.log(`Hervivoros [${hervivoro}] & Carnivoros [${carnivoro}]`);
+        return agregarAnimal({nombre:'Caballo',tipo:'Hervivoro'});
+    })
+    .then(animal => {
+        console.log(animal);
+        console.log(`Hervivoros [${hervivoro}] & Carnivoros [${carnivoro}]`);
+        // return agregarAnimal({nombre:'Caballo',tipo:'Hervivoro'});
+        console.log(jaulaCarnivoros);
+        console.log(jaulaHervivoros);
+    })

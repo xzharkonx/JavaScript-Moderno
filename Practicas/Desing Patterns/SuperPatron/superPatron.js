@@ -169,8 +169,13 @@ const juego = (()=>{
     empezarJuego = () => {
         console.log("Empezando juego");
     }
+    empezarJuegoAuto = (() => {
+        console.log("Empezando juego");
+    })()
 })();
 
 juego
+// Esta se ejecuta al final porque primero ejecuta todo lo del juego.
 console.log(nombreJuego);
 empezarJuego();
+empezarJuegoAuto

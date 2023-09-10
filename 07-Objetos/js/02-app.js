@@ -23,4 +23,5 @@ console.log(producto.disponible);
 // ### Otra forma de acceder a las variables del objeto.
 console.log(producto['nombre']);
 console.log(producto['marca'].nombre);
+console.log(producto['marca']['nombre']);
 console.log(producto['marca'].modelo);

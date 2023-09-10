@@ -69,6 +69,11 @@ window.addEventListener('scroll', () => {
     // ! Esto nos servirá para crear efectos, animaciones o cualquier cosa cuando estemos a una
     // ! determinada posición de algún elemento.
     // ! Incluso para saber que tanta atención le pone el usuario a un elemento
+    // ? Podemos interseptar una zona donde se empiecen a contar segundos y que al salir
+    // ? se agregue la cuenta a una variable que valla sumando los segundos por esa zona
+    // ? y que cuando salga se dirija a otra zona que en otra variable cuente los valores de
+    // ? esa zona, así sabremos cuantos segundos pasa cada usuario en cada zona, eso para
+    // ? poder detectar que tan llamativa para esa persona es.
 
 
 });

@@ -40,9 +40,9 @@ function computeTurn(battle, myAttack, otherAttack){
     state.setStrategy(battle);
     state.executeAtack(1);
     
-    const state = otherAttack;
-    state.setStrategy(battle);
-    state.executeAtack(1);
+    // const state = otherAttack;
+    // state.setStrategy(battle);
+    // state.executeAtack(1);
 
 }
 

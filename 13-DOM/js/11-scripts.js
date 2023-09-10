@@ -6,7 +6,7 @@ const footer = document.querySelector('.footer');
 
 // ## Bóton que ejecutará un evento
 
-// ? Primer argumento esperará el tipo de evento, en neustro caso será un click
+// ? Primer argumento esperará el tipo de evento, en nuestro caso será un click
 // ? El segundo argumento viene a ser una función o una función anónima pero se declarán como un arow function.
 
 // ? Esta forma funciona
