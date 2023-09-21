@@ -140,7 +140,7 @@ function mostrarImagenes(imagenes) {
 
                     <div class="p-4">
                         <p class="font-bold">${likes} <span class="font-light">Me Gusta</span></p>
-                        <p class="font-bold">${views} <span class="font-light">Veces vista</span></p>
+                        <p class="font-bold">${views} <span class="font-light">Vitas</span></p>
 
                         <a 
                             class=" block w-full bg-blue-800 hover:bg-blue-500 text-white uppercase font-bold text-center rounded mt-5 p-1"
